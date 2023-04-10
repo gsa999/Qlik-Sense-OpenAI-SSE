@@ -1,0 +1,14 @@
+{
+    "Functions" : [
+        {
+            "Id" : 0,
+            "Name" : "ChatGPT",
+            "Type" : 2,
+            "ReturnType": 0,
+            "Params" : {
+                "text" : 0
+                }
+        }
+
+    ]
+}

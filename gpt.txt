@@ -1,0 +1,10 @@
+fastapi
+
+uvicorn 
+
+uvicorn[standard]
+
+pandas
+
+requests
+typing
