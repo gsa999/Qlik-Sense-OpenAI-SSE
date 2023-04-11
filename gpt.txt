@@ -1,10 +1,5 @@
-fastapi
-
-uvicorn 
-
-uvicorn[standard]
-
-pandas
-
+grpcio
+protobuf
 requests
-typing
+grpcio-tools
+pandas
