@@ -109,7 +109,7 @@ class ExtensionService(SSE.ConnectorServicer):
                 "prompt": prompt
             }
             headers = {
-                'Authorization': 'Bearer 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',
+                'Authorization': 'Bearer "OPENAI_API_KEY" ',
                 'Content-Type': 'application/json'
             }
             print('----------------prompt--------------------')            
