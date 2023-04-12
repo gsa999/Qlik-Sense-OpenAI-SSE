@@ -112,10 +112,10 @@ class ExtensionService(SSE.ConnectorServicer):
                 'Authorization': 'Bearer "OPENAI_API_KEY" ',
                 'Content-Type': 'application/json'
             }
-            print('----------------prompt--------------------')            
-            print(prompt)
             request = requests.post('https://api.openai.com/v1/completions', headers=headers, json=model_body)
             chatgpt_data = request.json()
+            print('----------------chatgpt_data--------------------')            
+            print(chatgpt_data)
             chatdata = [chatgpt_data['choices'][0]['text']]
             duals = iter([[SSE.Dual(strData=d)] for d in chatdata])
 
