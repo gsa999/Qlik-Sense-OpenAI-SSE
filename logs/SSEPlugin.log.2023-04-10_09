@@ -1,7 +1,0 @@
-2023-04-10 09:19:12,322 - INFO - __main__ : 50 - Logging enabled
-2023-04-10 09:19:12,333 - INFO - __main__ : 245 - *** Running server in insecure mode on port: 50058 ***
-2023-04-10 09:34:39,785 - INFO - __main__ : 147 - GetCapabilities
-2023-04-10 09:34:39,787 - INFO - __main__ : 170 - Adding to capabilities: ChatGPT(['text'])
-2023-04-10 09:41:41,167 - INFO - __main__ : 185 - ExecuteFunction (functionId: 0)
-2023-04-10 09:41:56,155 - INFO - __main__ : 185 - ExecuteFunction (functionId: 0)
-2023-04-10 09:42:45,464 - INFO - __main__ : 185 - ExecuteFunction (functionId: 0)
