@@ -7,6 +7,7 @@
 - Qlik Sense February 2018+
 - Python 3.5.3 64 bit (tested in 3.6.8)
 - Python Libraries: ..../requirements_gpt.txt file (pip install -r requirements_chatgpt.txt)
+- Get your own ChatGPT API key from  https://platform.openai.com/account/api-keys (registeration required)
 
 ## LAYOUT
 
