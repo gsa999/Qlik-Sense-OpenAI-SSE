@@ -1,4 +1,4 @@
-# Python ChatGPT Service SSE for Qlik
+# Python OpenAI (ChatGPT) Service SSE for Qlik
 
 ## REQUIREMENTS
 
