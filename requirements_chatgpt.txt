@@ -3,3 +3,7 @@ protobuf
 requests
 grpcio-tools
 pandas
+fastapi
+uvicorn 
+requests
+typing
