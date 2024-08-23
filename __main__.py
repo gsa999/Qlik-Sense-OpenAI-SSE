@@ -103,20 +103,31 @@ class ExtensionService(SSE.ConnectorServicer):
         chatdata1=[]
         if len(prompt) > 0:
             model_body = {
-                "model":"text-davinci-003",
-                "max_tokens": 3000,
-                "temperature": 0,
-                "prompt": prompt
-            }
+                            "model": "gpt-3.5-turbo" , # Assuming you're using this model (update if needed)
+                            "messages": [  # Add the messages key with user message
+                                {
+                                    "role": "user",  # Specify the user's role
+                                    "content": prompt
+                                }
+                            ]
+                        }
+
             headers = {
-                'Authorization': 'Bearer "OPENAI_API_KEY" ',
+                'Authorization': 'Bearer sk-gsa999', #Replace "sk-gsa999" with your API Key
                 'Content-Type': 'application/json'
             }
-            request = requests.post('https://api.openai.com/v1/completions', headers=headers, json=model_body)
-            chatgpt_data = request.json()
+            request = requests.post('https://api.openai.com/v1/chat/completions', headers=headers, json=model_body)
+            chatgpt_data = request.json()  # Assuming request is the response object
+
+# Access content from 'message' dictionary
+  
+
+# You can optionally access additional details like role:
+# chat_role = chatgpt_data['choices'][0]['message']['role']
             print('----------------chatgpt_data--------------------')            
             print(chatgpt_data)
-            chatdata = [chatgpt_data['choices'][0]['text']]
+            chatdata = [chatgpt_data['choices'][0]['message']['content']]
+            #chatdata = [chatgpt_data['choices'][0]['text']]
             duals = iter([[SSE.Dual(strData=d)] for d in chatdata])
 
             # Yield the row data as bundled rows
